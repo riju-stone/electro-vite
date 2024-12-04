@@ -8,4 +8,8 @@ export default defineConfig({
   build: {
     outDir: "dist-ui",
   },
+  server: {
+    port: 5173,
+    strictPort: true,
+  },
 });
