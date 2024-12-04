@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "dev:vite": "vite",
     "build:vite": "tsc -b && vite build",
-    "transpile:electron": "tsc --project src/electron/tsconfig.json",
+    "transpile:electron": "tsc --project src/main/tsconfig.json",
     "dev:electron": "bun transpile:electron; cross-env NODE_ENV=dev electron .",
     "build:mac": "bun transpile:electron && bun build:vite && electron-builder --mac --arm64",
     "build:linux": "bun transpile:electron && bun build:vite && electron-builder --linux --x64",
